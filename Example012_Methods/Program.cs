@@ -56,7 +56,7 @@
 
 // string Method4(int count, string text)
 // {
-//     string result = String.Empty;
+//     string result = String.Empty; //String.Empty - Пустая строка
 //     for (int i = 0; i < count; i++)
 //     {
 //         result = result + text;
@@ -84,13 +84,11 @@
 
 // Ясна ли задача?
 
-// string text = "Я думаю, - Сказал князь, улыбаясь, - что, "
+// string txt = "Я думаю, - Сказал князь, улыбаясь, - что, "
 //             + "ежели бы вас послали вместо нашего милого Винецгероде,"
 //             + "вы бы взяли приступом согласие прусского короля."
 //             + "Вы так красноречивы. Вы дадите мне чаю?";
 
-// // string s = "qwerty"
-// //             012345
 
 // string Replase(string text, char oldValue, char newValue)
 // {
@@ -105,45 +103,67 @@
 
 //     return result;
 // }
-// string newText = Replase(text, ' ', '|');
+// string newText = Replase(txt, ' ', '|');
 // Console.WriteLine(newText);
 
 // newText = Replase(newText, 'к', 'К');
 // Console.WriteLine(newText);
 
-int[] arr = {2, 3, 4, 9, 2, 7, 4, 8, 6};
+// int[] arr = {2, 3, 4, 9, 2, 7, 4, 8, 6};
 
-void PrintArray(int[] array)
-{
-    int count = array.Length;
+// void PrintArray(int[] array)
+// {
+//     int count = array.Length;
 
-    for (int i = 0; i < count; i++)
-    {
-        Console.Write($"{array[i]} ");
-    }
-    Console.WriteLine();
-}
+//     for (int i = 0; i < count; i++)
+//     {
+//         Console.Write($"{array[i]} ");
+//     }
+//     Console.WriteLine();
+// }
 
-void SelectionSort(int[] array)
-{
-    for (int i = 0; i < array.Length - 1; i++)
-    {
-        int minPosition = i;
+// void SelectionSortUp(int[] array)
+// {
+//     for (int i = 0; i < array.Length - 1; i++)
+//     {
+//         int minPosition = i;
 
-        for (int j = i + 1; j < array.Length; j++)
-        {
-            if (array[j] < array[minPosition]) minPosition = j;
-        }
+//         for (int j = i + 1; j < array.Length; j++)
+//         {
+//             if (array[j] < array[minPosition]) minPosition = j;
+//         }
+
+//         int temporary1 = array[i];
+//         array[i] = array[minPosition];
+//         array[minPosition] = temporary1;
+
+//     }
+// }
+
+// void SelectionSortDown(int[] array)
+// {
+//     for (int k = 0;  k < array.Length - 1; k++)
+//     {
+//         int maxPosition = k;
+
+//         for (int l = k + 1; l < array.Length; l++)
+//         {
+//             if (array[l] > array[maxPosition]) maxPosition = l;
+//         }
+        
+//         int temporary2 = array[k];
+//         array[k] = array[maxPosition];
+//         array[maxPosition] = temporary2;
+
+//     }
+// }
 
 
-        int temporary = array[i];
-        array[i] = array[minPosition];
-        array[minPosition] = temporary;
 
-    }
-}
 
-PrintArray(arr);
-SelectionSort(arr);
 
-PrintArray(arr);
+// PrintArray(arr);
+// SelectionSortUp(arr);
+// PrintArray(arr);
+// SelectionSortDown(arr);
+// PrintArray(arr);
