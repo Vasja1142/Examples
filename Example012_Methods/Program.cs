@@ -84,30 +84,30 @@
 
 // Ясна ли задача?
 
-// string txt = "Я думаю, - Сказал князь, улыбаясь, - что, "
-//             + "ежели бы вас послали вместо нашего милого Винецгероде,"
-//             + "вы бы взяли приступом согласие прусского короля."
-//             + "Вы так красноречивы. Вы дадите мне чаю?";
+string txt = "Я думаю, - Сказал князь, улыбаясь, - что, "
+            + "ежели бы вас послали вместо нашего милого Винецгероде,"
+            + "вы бы взяли приступом согласие прусского короля."
+            + "Вы так красноречивы. Вы дадите мне чаю?";
 
 
-// string Replase(string text, char oldValue, char newValue)
-// {
-//     string result = String.Empty;
+string Replase(string text, char oldValue, char newValue)
+{
+    string result = String.Empty;
 
-//     int length = text.Length;
-//     for (int i = 0; i < length; i++)
-//     {
-//         if (text[i] == oldValue) result = result + $"{newValue}";
-//         else  result = result + $"{text[i]}";
-//     }
+    int length = text.Length;
+    for (int i = 0; i < length; i++)
+    {
+        if (text[i] == oldValue) result = result + $"{newValue}";
+        else  result = result + $"{text[i]}";
+    }
 
-//     return result;
-// }
-// string newText = Replase(txt, ' ', '|');
-// Console.WriteLine(newText);
+    return result;
+}
+string newText = Replase(txt, ' ', '|');
+Console.WriteLine(newText);
 
-// newText = Replase(newText, 'к', 'К');
-// Console.WriteLine(newText);
+newText = Replase(newText, 'к', 'К');
+Console.WriteLine(newText);
 
 // int[] arr = {2, 3, 4, 9, 2, 7, 4, 8, 6};
 
